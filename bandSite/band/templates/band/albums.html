@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music</title>
+</head>
+<body>
+    <h1>Our Albums</h1>
+    <p>Our upcoming album called "Death Monkey" coming soon.
+    <br></br>
+    <p>1. Lolli hopp drop with 143 million downloads 2012-2024</p>
+    <p>2. Banana Split with 93 million downloads 2022-2024</p>
+    <p>3. Infinity and Beyond with 77 million downloads 2020-2024</p>
+    <ul>
+        {% for album in albums %}
+        <li>{{ album.title }} - {{ album.artist }}</li>
+        {% endfor %}
+        </ul>
+</body>
+</html>

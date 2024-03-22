@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Events</title>
+</head>
+<body>
+    <h1>Welcome To Events</h1>
+    <p>Upcoming events calendar</p>
+    <p>Califonia - 23 March 2024</p>
+    <p>Hawaii - 30 March 2024</p>
+    <p>Iowa - 7 April 2024</p>
+    <p>New York - 15 April 2024</p>
+    <p>Atlanta - 20 April 2024</p>
+    <p>Washington - 30 April 2024</p>
+
+    <ul>
+        {% for event in events %}
+        <li>{{ events.title }} - {{ events.date }} at {{ event.location }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
