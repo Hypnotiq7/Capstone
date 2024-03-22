@@ -9,6 +9,9 @@ def home(request):
     return render(request, 'registration/home.html')
 
 def login(request):
+    """
+    View function of the Login page. If you want to sign in with your username and password this is the page you looking for
+    """
     return render(request, 'registration/login.html')
 
 def register(request):
