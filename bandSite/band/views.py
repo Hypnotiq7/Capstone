@@ -15,4 +15,7 @@ def login(request):
     return render(request, 'registration/login.html')
 
 def register(request):
+    """
+    View function for anyone that needs to register. If you dont have username or password, you can sign up
+    """
     return render(request, 'registration/register.html')
